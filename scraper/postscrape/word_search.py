@@ -6,7 +6,7 @@ import urllib
 db = r'sagas.json'
 data = json.loads(open(db).read())
 
-word = input("Sladu inn leitarord (beygingarmyndir koma sjalfkrafa)")
+word = input("Sladu inn leitarord (beygingarmyndir koma sjalfkrafa): ")
 urltest = 'https://bin.arnastofnun.is/api/beygingarmynd/' + urllib.parse.quote_plus(word)
 #print(urltest)
 binJson = json.load(urllib2.urlopen(urltest))
